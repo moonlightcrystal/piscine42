@@ -1,0 +1,5 @@
+Credentials cache: API:CE15B439-0AE0-4C9E-A49C-8C4411CB08CD
+        Principal: kcorie@21-SCHOOL.RU
+
+  Issued                Expires               Principal
+Feb 26 13:50:23 2019  Feb 27 13:50:23 2019  krbtgt/21-SCHOOL.RU@21-SCHOOL.RU

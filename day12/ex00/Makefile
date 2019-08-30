@@ -1,0 +1,32 @@
+#******************************************************************************#
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kcorie <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/14 18:29:46 by kcorie            #+#    #+#              #
+#    Updated: 2019/03/14 19:13:24 by kcorie           ###   ########.fr        #
+#                                                                              #
+#******************************************************************************#
+
+TARGET = libft.a
+
+C_FILES = ./srcs/ft_putchar.c ./srcs/ft_putstr.c
+
+O_FILES = ft_putchar.o ft_putstr.o
+
+all:	$(TARGET)
+
+$(TARGET):
+	gcc -Wall -Wextra -Werror -c $(C_FILES)
+	ar rc $(TARGET) $(O_FILES)
+	gcc -o display_file $(C_FILES) display_file.c -L. -lft
+
+clean:
+	/bin/rm -f $(O_FILES)
+
+fclean: clean
+	/bin/rm -f $(TARGET)
+
+re: fclean all

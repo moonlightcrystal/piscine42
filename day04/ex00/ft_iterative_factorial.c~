@@ -1,0 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kcorie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/03/02 16:57:39 by kcorie            #+#    #+#             */
+/*   Updated: 2019/03/02 20:54:02 by kcorie           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int		ft_iterative_factorial(int nb)
+{
+	int factorial;
+
+	factorial = 1;
+	if (nb < 0 || nb > 12)
+	{
+		return (0);
+	}
+	else if (nb == 0 || nb == 1)
+	{
+		return (1);
+	}
+	while (nb >= 1)
+	{
+		factorial *= nb;
+		nb--;
+	}
+	return (factorial);
+}

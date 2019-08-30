@@ -1,0 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kcorie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/02/28 21:34:43 by kcorie            #+#    #+#             */
+/*   Updated: 2019/02/28 22:07:33 by kcorie           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int		ft_putchar(char c);
+
+void	ft_print_reverse_alphabet(void)
+{
+	char c;
+
+	c = 'z';
+	while (c >= 'a')
+	{
+		ft_putchar(c);
+		c--;
+	}
+	ft_putchar('\n');
+}
+
+int		main(void)
+{
+	ft_print_reverse_alphabet();
+	return (0);
+}

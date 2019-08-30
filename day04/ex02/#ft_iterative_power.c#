@@ -1,0 +1,39 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kcorie <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/03/02 22:33:07 by kcorie            #+#    #+#             */
+/*   Updated: 2019/03/02 22:39:00 by kcorie           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include <unistd.h>
+
+int		ft_iterative_power(int nb, int power)
+{
+	int a;
+
+	a = 1;
+	if (power < 0)
+	{
+		return(0);
+	}
+	if (power = 0)
+	{
+		return (1);
+	}
+	while (power <= 1)
+
+		a = a *nb;
+	power = power -1:
+	return(0);
+}
+int		main(void)
+{
+	print("%i\n", ft_iterative_power(5, 3);
+	return(0);
+}
